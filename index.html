@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script>
+        function showSideBar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function tutupSideBar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</head>
+<body>
+    <div id="landing">
+        <nav>
+            <h1>My Portfolio</h1>
+            <ul>
+                <li class="hideOnMobile"><a href="#home">Home</a></li>
+                <li class="hideOnMobile"><a href="#about">About Me</a></li>
+                <li class="hideOnMobile"><a href="#portfolio">Portfolio</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                <li onclick="showSideBar()"><a href="#"><img class="menuButton" src="assets/icon menu.png" alt="menu"></a></li>
+            </ul>
+            <ul class="sidebar">
+                <li onclick="tutupSideBar()"><a href="#"><img src="assets/icons8-wrong-60.png" alt="close"></a></li>
+                <li class="listMenu"><a href="#home">Home</a></li>
+                <li class="listMenu"><a href="#about">About Me</a></li>
+                <li class="listMenu"><a href="#portfolio">Portfolio</a></li>
+                <li class="listMenu"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero" id="home">
+            <div class="title">
+                <h3>Hello Everyone👋 I'm</h3>
+                <h2>Arjuna Putra Lasmana</h2>
+                <h4>Programmer & Designer</h4>
+                <p>Welcome to <span>My Portfolio</span> website. This website I buid to give information About
+                    my Portfolio in Develop Website, create Design, and my Draw since I was study in Middle School. 
+                </p>
+                <a href="#about">See More</a>
+            </div>
+
+            <div class="image">
+                <img id="img-hero" src="assets/IMG_20240407_071134.png" alt="">
+            </div>
+        </div>
+
+        <div class="aboutMe" id="about">
+            <div class="t-about">
+                <h4>About Me</h4>
+                <h5>Do you now who I am?</h5>
+            </div>
+
+            <div class="about"> 
+                <div class="box">
+                    <h3>Collage</h3>
+                    <p>I am a student from SMK 1 Cikini College majoring in computers & networks. 
+                        I've been at SMK 1 Cikini for one semester. 
+                        Previously I was a graduate of SMP 114 Jakarta, which is located in Semper Barat.
+                    </p>
+                </div>
+                <div class="box">
+                    <h3>Skills</h3>
+                    <p>I have expertise in creating front end websites, creating presentation 
+                        designs in Powerpoint, 
+                        poster design, website UI design, and drawing. And also now I am learning the C and 
+                        C++ programming languages.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio" id="portfolio">
+            <div class="t-portfolio">
+                <h5>Portfolio</h5>
+                <h4>My Project</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur veniam error beatae sint 
+                    veritatis praesentium nemo accusantium doloremque!
+                </p>
+            </div>
+
+            <div class="project">
+                <div class="box-p">
+                    <img src="assets/Web 1.png" alt="">
+                    <h5>My Online Store Website</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut ut cum hic!</p>
+                </div>
+                <div class="box-p">
+                    <img src="assets/Web 2.png" alt="">
+                    <h5>My Blog Website</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo eligendi natus vitae?</p>
+                </div>
+                <div class="box-p">
+                    <img src="assets/Screenshot (167).png" alt="">
+                    <h5>Presentation Bugatti In Powerpoint</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut ut cum hic!</p>
+                </div>
+                <div class="box-p">
+                    <img src="assets/Screenshot (168).png" alt="">
+                    <h5>Presentation  In Powerpoint</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo eligendi natus vitae?</p>
+                </div>
+                <div class="box-p">
+                    <img src="assets/20240406_130402_0000.png" alt="">
+                    <h5>Poster Ingredients Pringles</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut ut cum hic!</p>
+                </div>
+                <div class="box-p">
+                    <img src="assets/20240406_130503_0000.png" alt="">
+                    <h5>Class Map Design</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo eligendi natus vitae?</p>
+                </div>
+                <div class="box-p">
+                    <img src="assets/JADWAL PELAJARAN IX-G_20240406_130800_0000.png" alt="">
+                    <h5>Poster Jadwal Pelajaran</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut ut cum hic!</p>
+                </div>
+                <div class="box-p">
+                    <img src="assets/Poster_20240406_130212_0000.png" alt="">
+                    <h5>Poster Literasi</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo eligendi natus vitae?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <div class="t-contact">
+                <h5>Contact</h5>
+                <h4>Contact Me</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Maxime quis laboriosam facilis est quo assumenda architecto aspernatur dolore!
+                </p>
+            </div>
+
+            <div class="form">
+                <span>Nama</span><br>
+                <input type="username"><br>
+                <span>Email</span><br>
+                <input type="email"><br>
+                <span>Message</span><br>
+                <textarea name="message"></textarea><br>
+                
+                <div class="send">
+                    <button>Send</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="atas">
+                <div class="row1">
+                    <h2>My Portfolio</h2>
+                    <h3>Contact Me</h3>
+                    <a href="">arjuna.putra.lasmana@gmail.com</a>
+                    <p>Gg. VII Blok F Kel. Semper Barat Kec. Cilincing.</p>
+                </div>
+                <div class="row">
+                    <h3>Category</h3>
+                    <ul>
+                        <li><p>Programming</p></li>
+                        <li><p>Design</p></li>
+                        <li><p>Art</p></li>
+                        <li><p>Portfolio</p></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <h3>Link</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tengah">
+                <a href="#"><img src="assets/black-email-icon-png-6.png" alt="logo-email"></a>
+                <a href="#"><img class="ig" src="assets/vecteezy_logotipo-de-instagram-png-icono-de-instagram-transparente_18930692.png" alt="logo-email"></a>
+                <a href="#"><img src="assets/Icon Tiktok.png" alt="logo-email"></a>
+            </div>
+
+            <div class="bawah">
+                <p>&copy;2024 Arjuna Putra Lasmana | All Right Reserved</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
